@@ -1,7 +1,5 @@
 # Frontend Mentor - Single price grid component solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -48,16 +46,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS 
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -69,10 +62,14 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@import "color.css";
+:root{
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-brightYellow: hsl(71, 73%, 54%);
+  --color-lightGrey: hsl(204, 43%, 93%);
+  --color-grayishBlue: hsl(218, 22%, 67%);
+  --color-lightCyan: hsl(179, 62%, 46%);
 }
-```
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')

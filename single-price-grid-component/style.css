@@ -1,0 +1,121 @@
+@import "color.css";
+
+
+*{
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+body{
+    align-items: center;
+    background-color: var(--color-lightGrey);
+    display: grid;
+}
+
+#grid-container{
+    padding: 35px;
+}
+
+#grid-container #top{
+    padding: 20px 30px;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+p{
+    margin: 0 0 10px;
+    font-weight: 300;
+}
+
+#top{
+    background-color: white;
+    font-weight: 700;
+}
+
+#top h1{
+    color: var(--color-cyan);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+#top h3{
+    color: var(--color-brightYellow);
+    font-weight: 900;
+}
+
+#top p{
+    color: var(--color-grayishBlue);
+    font-weight: 900;
+}
+
+#bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bottom #left{
+    color: white;
+    background-color: var(--color-cyan);
+    padding: 25px;
+}
+
+#bottom #left h1{
+    font-weight: 900;
+}
+
+#bottom #left #price{
+    color: var(--color-lightGrey);
+    font-height: 300;
+    display: flex;
+    align-items: center;
+}
+
+#bottom #left #price #number{
+    font-size: 30px;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+
+#bottom #left button{
+    color: white;
+    background-color: var(--color-brightYellow);
+    cursor: pointer;
+    width: 100%;
+    margin:20px 0 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#bottom #right{
+    color: white;
+    background-color: var(--color-lightCyan);
+}
+
+#bottom #right h3{
+    font-size: 1.1rem;
+    font-weight:700;
+    padding: 20px 40px 0;
+}
+
+#bottom #right li{
+    color: var(--color-lightGrey);
+    font-size: 0.9rem;
+    font-weight:300;
+}
+
+footer{
+    text-align: center;
+}
