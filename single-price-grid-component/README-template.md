@@ -70,11 +70,7 @@ To see how you can add code snippets, see below:
   --color-grayishBlue: hsl(218, 22%, 67%);
   --color-lightCyan: hsl(179, 62%, 46%);
 }
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
