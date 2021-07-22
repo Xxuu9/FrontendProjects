@@ -1,0 +1,45 @@
+:root{
+    --color-veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --color-softRed: hsl(14, 88%, 65%);
+    --color-softViolet: hsl(273, 75%, 66%);
+    --color-softBlue: hsl(240, 73%, 65%);
+    --color-veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --color-darkGrayishBlue: hsl(240, 6%, 50%);
+    --color-lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    /*CSS gradients*/
+    background-color: linear-gradient(to bottom, var(--color-softViolet),var(--color-softBlue));
+    background-size: 100%;
+    background-repeat: repeat-x;
+}
+
+
+
+
+.container{
+    margin: 100px;
+    width: 150%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, 100%);
+}
+
+.woman-desktop{
+
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.attribution{
+
+}
