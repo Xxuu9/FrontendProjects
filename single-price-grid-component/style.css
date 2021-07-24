@@ -1,27 +1,24 @@
 @import "color.css";
 
 
-*{
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--color-lightGrey);
+    display: grid;
     font-family: 'Karla', sans-serif;
     box-sizing: border-box;
     line-height: 1.5;
     font-size: 18px;
 }
 
-body{
-    align-items: center;
-    background-color: var(--color-lightGrey);
-    display: grid;
-}
-
-
 #bottom{
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
 
-@media (max-width: 600px) {
-
+@media screen and (max-width: 600px) {
     #bottom{
         display: grid;
         grid-template-columns: repeat(1, 100%);
@@ -30,11 +27,24 @@ body{
 }
 
 #grid-container{
-    padding: 35px;
+    padding: 40px;
+    /*border: solid 10px;*/
+
+    /*border-radius: 10px;*/
 }
 
 #grid-container #top{
-    padding: 20px 30px;
+    padding: 30px 40px;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+}
+
+#grid-container #left{
+    border-bottom-left-radius:15px;
+}
+
+#grid-container #right{
+    border-bottom-right-radius:15px;
 }
 
 ul,li{
@@ -85,7 +95,7 @@ p{
 
 #bottom #left #price{
     color: var(--color-lightGrey);
-    font-height: 300;
+    font-weight: 400;
     display: flex;
     align-items: center;
 }
@@ -100,6 +110,7 @@ p{
 #bottom #left button{
     color: white;
     background-color: var(--color-brightYellow);
+    opacity: 0.9;
     cursor: pointer;
     width: 100%;
     margin:20px 0 0;
@@ -109,6 +120,11 @@ p{
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+#bottom #left button:hover{
+    opacity: 1.0;
+}
+
 
 #bottom #right{
     color: white;
