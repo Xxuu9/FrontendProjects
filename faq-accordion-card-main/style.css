@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+
 :root{
     --color-veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
     --color-softRed: hsl(14, 88%, 65%);
@@ -6,40 +9,107 @@
     --color-veryDarkGrayishBlue: hsl(237, 12%, 33%);
     --color-darkGrayishBlue: hsl(240, 6%, 50%);
     --color-lightGrayishBlue: hsl(240, 5%, 91%);
+    --font-size: 12px;
 }
 
-
+*{
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 12px;
-    /*CSS gradients*/
-    background-color: linear-gradient(to bottom, var(--color-softViolet),var(--color-softBlue));
-    background-size: 100%;
-    background-repeat: repeat-x;
-}
-
-
-
-
-.container{
-    margin: 100px;
-    width: 150%;
-    background-color: white;
+    font-size: var(--font-size);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(1, 100%);
+    justify-content: center;
+    align-items: center;
+    /*CSS gradients*/
+    background: linear-gradient(var(--color-softViolet),var(--color-softBlue));
 }
 
-.woman-desktop{
+.wrapper{
+    margin: 50px;
+    height: 500px;
+    width: 920px;
+    background-color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 5rem;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 1255% 65%;
+}
+.answer {
+    display: none;
+}
+.answer.show {
+    display: block;
+}
 
+.paragraph_wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion_paragraph{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question_answer_accordion{
+    width: 400px;
+    border-bottom: 1px solid #f0f0f1
 }
 
 .title{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
+    margin-top: 0;
 }
 
-.attribution{
+.question_title{
+    margin: 1.4rem 0;
+    color:var(--color-veryDarkGrayishBlue);
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
 
+.question img{
+    align-self: center;
+}
+
+.question_title{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-darkGrayishBlue);
+}
+.question_title:hover{
+    font-weight: 1000;
+}
+
+.image_wrapper{
+    position: relative;
+}
+
+.image_wrapper_inner{
+    background: url(./images/illustration-woman-online-desktop.svg) no-repeat 120% center;
+    height: 100%;
+}
+.box{
+    position: absolute;
+    top: 45%;
+    left:-20%;
+}
+.answer{
+    font-size: 14px;
+    margin: 0.3rem 0;
+    line-height: 20px;
 }
