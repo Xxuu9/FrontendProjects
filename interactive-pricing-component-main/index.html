@@ -8,6 +8,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <main>
     <div class="pricing_component">
@@ -21,18 +22,18 @@
       </div>
 <!--      <img class="bg_pattern" src="images/bg-pattern.svg">-->
       <div class="price_block">
-        <div class="pageviews">
+        <div class="pageviews"><span>100k</span>
           Pageviews
         </div>
         <div class="price_per_month">
-          $ /month
+          <span>$<span class="price_prefix">16</span>.00</span>
+          <span class="month">/month</span>
         </div>
         <div class="slidecontainer">
           <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </div>
         <div class="billing_option">
           <p>Monthly Billing</p>
-
           <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
@@ -41,12 +42,14 @@
           <p>Yearly Billing</p>
           <p class="discount_amount">25% discount</p>
         </div>
+
+        <div class="start_button">
         <ul>
           <li>Unlimited websites</li>
           <li>100% data ownership</li>
           <li>Email reports</li>
         </ul>
-        <div class="start_button">
+
           <input type="button" value="Start my trial" class="button">
         </div>
       </div>

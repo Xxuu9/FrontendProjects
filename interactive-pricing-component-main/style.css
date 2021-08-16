@@ -30,23 +30,25 @@ body{
     padding: 0;
     background: var(--color-veryPaleBlue);
 }
+
 main{
     font-family: 'Manrope', sans-serif;
     color: var(--color-GrayishBlue);
+    max-width: 1400px;
 }
 
 .pricing_component{
-    background: url('./images/bg-pattern.svg') no-repeat;
+    background: url('./images/bg-pattern.svg') no-repeat center;
     background-size: 100%;
     justify-content: center;
-    display: grid;
 }
 
 .pricing_title{
     text-align: center;
-    padding: 100px 0 120px 0;
+    /*padding: 150px 0 120px 0;*/
+    top:20%;
+    margin: 0 auto;
     background: url('./images/pattern-circles.svg') no-repeat center;
-
 }
 
 .pricing_title1{
@@ -61,13 +63,13 @@ main{
 }
 
 .price_block{
-    margin-top: 90px;
-    background: white;
+    margin: 0 auto;
     width: 500px;
     height: 400px;
-    position: relative;
-    justify-content: center;
-    top: -20%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px hsl(227, 25%, 85%);
+    min-width: 500px;
 }
 
 
