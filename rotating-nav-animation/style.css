@@ -68,7 +68,7 @@ body {
 .circle button#close {
   top: 60%;
   transform: rotate(90deg);
-  transform-origin: top left;
+  transform-origin: left top;
 }
 
 .container.show-nav + nav li {
@@ -108,7 +108,7 @@ nav ul li + li {
 
 nav ul li + li + li {
   margin-left: 30px;
-  transform: translateX(-200%);
+  transform: translateX(-300%);
 }
 
 nav a {
