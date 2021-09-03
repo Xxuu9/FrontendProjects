@@ -14,12 +14,12 @@ body {
 
 .container {
   background-color: #fafafa;
-  /* sets the origin for an element's transformations */
-  transform-origin: top left;
+  /* sets the origin for an element's transformations  transform-origin: x-axis y-axis z-axis|initial|inherit*/
+  transform-origin: left top;
   transition: transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
-  padding: 50px;
+  padding: 80px;
 }
 
 .container.show-nav {
