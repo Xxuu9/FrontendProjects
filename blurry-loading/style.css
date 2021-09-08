@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url(./little_village_by_helenilnytska_ddq58h7-pre.jpg) no-repeat
+    center center/cover;
+  position: absolute;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  /* blur(radius)较大的值会产生更多模糊 */
+  /* blur(0)        No effect */
+  /* blur(8px)      Blur with 8px radius */
+  /* blur(1.17rem)  Blur with 1.17rem radius */
+  filter: blur(0px);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
