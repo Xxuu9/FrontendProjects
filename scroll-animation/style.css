@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efedd6;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  background-color: rgb(70, 130, 180);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* x-坐标值：10px y-坐标值: 4px 模糊程度：5px 最后一个参数是颜色*/
+  box-shadow: 10px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:hover {
+  background-color: rgb(70, 130, 180, 0.9);
+}
+
+.box:active {
+  background-color: rgb(70, 130, 180, 1.3);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
