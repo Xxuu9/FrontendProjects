@@ -38,10 +38,10 @@ body {
 }
 
 .split.left {
-  background: url("ps.jpg") no-repeat cover;
-  /* background-image: url("ps.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
+  left: 0;
+  /* background-color image repear position attachment can be combianed, while size, origin and clip must be seperated */
+  background: url("ps.jpg") no-repeat;
+  background-size: cover;
 }
 
 /* use pseudo class to add bg color */
@@ -55,8 +55,7 @@ body {
 
 .split.right {
   right: 0;
-  background: url("xbox.jpg");
-  background-repeat: no-repeat;
+  background: url("xbox.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -106,4 +105,37 @@ h1 {
 .split.right .btn:hover {
   background-color: var(--right-btn-hover-color);
   border-color: var(--right-btn-hover-color);
+}
+
+.split.left,
+.split.right {
+  transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
 }
