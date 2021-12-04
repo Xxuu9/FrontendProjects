@@ -2,12 +2,15 @@ const loadText = document.querySelector('.loading-text')
 const bg = document.querySelector('.bg')
 
 let load = 0
+
+//repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.
 let int = setInterval(blurring, 30)
 
 function blurring(){
     load++
 
     if(load > 99){
+        //cancels a timed, repeating action which was previously established by a call to setInterval().
         clearInterval(int)
     }
 
